@@ -1,6 +1,6 @@
 'use strict';
 
-var mustache = require('mustache');
+var handlebars = require('handlebars');
 var path = require('path');
 var fs = require('fs');
 var cache = {};
@@ -14,7 +14,7 @@ function read (file, done) {
     if (err) {
       done(err);
     } else {
-      mustache.parse(template);
+      handlebars.compile(template);
       cache[file] = template;
       next();
     }
@@ -32,11 +32,11 @@ module.exports = {
       if (err) {
         done(err);
       } else {
-        done(null, mustache.render(template, model));
+        done(null, template(model));
       }
     });
   },
   renderString: function (template, model, done) {
-    done(null, mustache.render(template, model));
+    done(null, template(model));
   }
 };

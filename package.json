@@ -13,8 +13,7 @@
     "type": "git",
     "url": "git://github.com/bevacqua/campaign-mustache.git"
   },
-  "main": "mustache.js",
+  "main": "handlebars.js",
   "dependencies": {
-    "mustache": "2.2.1"
   }
 }
