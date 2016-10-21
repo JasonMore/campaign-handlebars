@@ -1,17 +1,17 @@
 {
-  "name": "campaign-mustache",
+  "name": "campaign-handlebars",
   "description": "Mustache template provider for Campaign",
   "version": "1.0.0",
-  "homepage": "https://github.com/bevacqua/campaign-mustache",
+  "homepage": "https://github.com/JasonMore/campaign-handlebars",
   "author": {
-    "name": "Nicolas Bevacqua",
+    "name": "Jason More",
     "email": "hello@ponyfoo.com",
     "url": "https://ponyfoo.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bevacqua/campaign-mustache.git"
+    "url": "git@github.com:JasonMore/campaign-handlebars.git"
   },
   "main": "handlebars.js",
   "dependencies": {
