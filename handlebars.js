@@ -14,8 +14,7 @@ function read (file, done) {
     if (err) {
       done(err);
     } else {
-      handlebars.compile(template);
-      cache[file] = template;
+      cache[file] = handlebars.compile(template);
       next();
     }
   });
