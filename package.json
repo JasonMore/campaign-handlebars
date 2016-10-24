@@ -1,12 +1,11 @@
 {
   "name": "campaign-handlebars",
-  "description": "Mustache template provider for Campaign",
+  "description": "Handlebars template provider for Campaign",
   "version": "1.0.0",
   "homepage": "https://github.com/JasonMore/campaign-handlebars",
   "author": {
     "name": "Jason More",
-    "email": "hello@ponyfoo.com",
-    "url": "https://ponyfoo.com"
+    "email": "Jason.More@gmail.com.com"
   },
   "license": "MIT",
   "repository": {

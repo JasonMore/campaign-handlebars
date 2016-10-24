@@ -25,6 +25,7 @@ function read (file, done) {
 }
 
 module.exports = {
+  handlebars: handlebars,
   defaultLayout: path.join(__dirname, 'layout.mu'),
   render: function (file, model, done) {
     read(file, function (err, template) {

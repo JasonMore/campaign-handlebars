@@ -1,11 +1,11 @@
-# campaign-mustache
+# campaign-handlebars
 
-> Mustache template provider for Campaign
+> Handlebars template provider for Campaign
 
 # install
 
 ```shell
-npm i campaign-mustache -S
+npm i campaign-handlebars -S
 ```
 
 # usage
@@ -14,16 +14,21 @@ using [`campaign`](https://github.com/bevacqua/campaign).
 
 ```js
 var campaign = require('campaign');
-var mustache = require('campaign-mustache');
+var handlebars = require('campaign-handlebars');
 var client = campaign({
-  templateEngine: mustache
+  templateEngine: handlebars
 });
 client.send(...) // as usual
 ```
 
-# `mustache`
+# `handlebars`
 
-no configuration is involved.
+Handlebars is exposed for adding options
+
+```js
+var handlebars = require('campaign-handlebars');
+handlebars.handlebars.registerHelper(...)
+```
 
 # license
 
